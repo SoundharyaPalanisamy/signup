@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    
+    <style>
+        body {
+          
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 101vh;
+        }
+       
+        form {
+            background-color: lightblue;
+            border-radius: 10px;
+            
+            width: 400px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select,
+        input[type="date"] {
+            width: 90%;
+         padding: 10px;
+            margin-bottom: 10px;
+        border: 2px solid rgb(235, 12, 64);
+            border-radius: 12px;
+            font-size: 14px;
+        }
+        
+        input[type="checkbox"] {
+            margin-right: 2px;
+        }
+        
+        label {
+            font-size: 14px;
+        }
+        
+        input[type="submit"] {
+            background-color: blue;
+            color: white;
+          padding: 10px 20px;
+            
+            border-radius: 2px;
+        cursor: pointer;
+            font-size: 14px;
+        }
+        
+        input[type="submit"]:hover {
+            background-color:rosybrown;
+            border-radius: 13px;
+        }
+        
+        legend {
+            color: rgb(27, 27, 133);
+            border-color: rgb(182, 175, 175);
+          font-weight: bold;
+      margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid white;
+        }
+        
+        h1 {
+            color: rgb(182, 51, 51);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+      h2  {
+        color: rgb(64, 11, 126);
+            text-align: center;
+            margin-bottom: 2px;
+        }
+    </style>
+  
+</head>
+<body>
+    
+    <form action="welcome.html">
+        <h1 style="color: rebeccapurple;">GUVI</h1>
+        <h2 style="color: rebeccapurple;"><u><i>I’m Interested in this Program</i></u></h2>
+       <center> <input type="text" name="Name" placeholder="Enter Your  Name:-" required minlength="5"></center>
+        <br>
+        <center><input type="text" name="Email" placeholder="Enter Your Email:-" required></center>    <br>
+        <center><input type="Number" name="Phone" placeholder="Enter Your Number" required></center>
+        <br>
+        <center><input type="text" name="Education" placeholder="Enter Your Qualification" required step="5"></center>
+        <br>
+       <center> <input type="text" name="current porfile" placeholder="current profile"></center>
+        <br>
+        <legend><u>Gender</u></legend>
+            
+       <center> <select name="gender" id="gender">
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="others">Others</option>
+        </select></center>
+        <br>
+        <input type="checkbox" name="smsNotification" id="smsnote">
+        <label for="smsnote">Receive SMS Notifications</label>
+        <br>
+        <!-- <input type="checkbox" name="WhatsappNotification" id="Whatsappnote">
+        <label for="Whatsappnote">Receive Whatsapp Notifications</label><br> -->
+        <input type="checkbox" name="mailNotification" id="mailnote">
+        <label for="mailnote">Receive Email Notifications</label>
+        <br><br>
+        <center><input type="submit" value="Create Account" style="border-radius: 13px;" ></center>
+    </form>
+</body>
+</html>
